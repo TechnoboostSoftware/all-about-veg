@@ -1,0 +1,178 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.bg-green {
+    background: rgba(1, 183, 98, 1);
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
+.fira {
+    font-family: 'Fira Sans Extra Condensed';
+    font-style: normal;
+}
+
+.noto {
+    font-family: 'Noto Sans';
+    font-style: normal;
+}
+
+.fs-35 {
+    font-size: 35px;
+}
+
+.fs-45 {
+    font-size: 45px;
+}
+
+.fs-50 {
+    font-size: 50px;
+}
+
+.fs-60 {
+    font-size: 60px;
+}
+
+.fWeight-400 {
+    font-weight: 400;
+}
+
+.fWeight-500 {
+    font-weight: 500;
+}
+
+.fWeight-600 {
+    font-weight: 600;
+}
+
+.fWeight-700 {
+    font-weight: 700;
+}
+
+.fWeight-800 {
+    font-weight: 800;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.bg-box {
+    background: rgba(245, 245, 245, 1);
+}
+
+.spacing {
+    letter-spacing: 0.01em;
+}
+
+.greenBtn:hover {
+    background: rgba(1, 183, 98, 1);
+}
+
+.mailButton input {
+    border: none;
+    background: transparent;
+}
+
+.mailButton input:focus {
+    outline: none;
+}
+
+.mailButton input::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 300;
+    font-size: 22px;
+    text-transform: capitalize;
+}
+
+.slideshow {
+    width: 80%;
+}
+
+.wrapper {
+    box-sizing: content-box;
+    background-color: #ffffff;
+    height: 90px;
+    display: flex;
+}
+
+.words {
+    overflow: hidden;
+}
+
+.words span {
+    display: block;
+    height: 100%;
+    padding-left: 10px;
+    color: #fc1c5b;
+    animation: spin_words 6s infinite;
+    color: #01B762;
+}
+
+@keyframes spin_words {
+    10% {
+        transform: translateY(-112%);
+    }
+
+    25% {
+        transform: translateY(-100%);
+    }
+
+    35% {
+        transform: translateY(-212%);
+    }
+
+    50% {
+        transform: translateY(-200%);
+    }
+
+    60% {
+        transform: translateY(-312%);
+    }
+
+    75% {
+        transform: translateY(-300%);
+    }
+
+    85% {
+        transform: translateY(-412%);
+    }
+
+    100% {
+        transform: translateY(-400%);
+    }
+}
+
+/* ################### Silder################## */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .2
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.rightText {
+    font-size: 70px;
+    color: rgba(255, 255, 255, 0.63);
+    transform: rotate(-90deg);
+}
