@@ -7,22 +7,35 @@
     background: rgba(1, 183, 98, 1);
 }
 
+.fs-10 {
+    font-size: 10px;
+}
 .fs-20 {
     font-size: 20px;
+}
+.fs-25 {
+    font-size: 25px;
 }
 
 .fira {
     font-family: 'Fira Sans Extra Condensed';
     font-style: normal;
 }
-
+.fade{
+    text-transform: capitalize;
+}
 .noto {
     font-family: 'Noto Sans';
     font-style: normal;
 }
-
+.greenText{
+    color: #01B762;
+}
 .fs-35 {
     font-size: 35px;
+}
+.fs-40 {
+    font-size: 40px;
 }
 
 .fs-45 {
