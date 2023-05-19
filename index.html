@@ -16,7 +16,8 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
             integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
             crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
             rel="stylesheet">
         <link
             href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@400;500;600;700;800;900&display=swap"
@@ -37,7 +38,8 @@
                     <div class="row position-relative">
                         <div class="col-7 left ">
                             <img src="IMAGES/soonLogo.svg" class="ps-3" style="width: 200px;">
-                            <div class="bg-green launching ps-4 d-flex align-items-center mt-3 w-75" style="margin-left: -13px;" >
+                            <div class="bg-green launching ps-4 d-flex align-items-center mt-3 w-75"
+                                style="margin-left: -13px;">
                                 <p class="text-dark fs-38 fWeight-600 m-0 fira">We’re <span class="text-light">Launching
                                         Soon</span></p>
                                 <img src="IMAGES/star.svg" class="ms-4">
@@ -63,9 +65,12 @@
                                     </p>
                                     <div class="d-flex bg-box mailButton justify-content-between py-2 px-2 w-75">
                                         <input type="text" placeholder="Enter your email id"
-                                            class="bg-none border-none fWeight-400 fs-20">
-                                        <button class="btn greenBtn bg-green" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><a href=""
-                                                class="text-decoration-none text-light fWeight-300 noto fs-20 spacing" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="IMAGES/bell.svg">Notify
+                                            class="bg-grey border-none fWeight-400 fs-20">
+                                        <button class="btn greenBtn bg-green" type="button" data-bs-toggle="modal"
+                                            data-bs-target="#extraLargeModal"><a href=""
+                                                class="text-decoration-none text-light fWeight-300 noto fs-20 spacing"
+                                                data-bs-toggle="modal" data-bs-target="#extraLargeModal"><img
+                                                    src="IMAGES/bell.svg">Notify
                                                 Me</a></button>
                                     </div>
                                 </div>
@@ -86,7 +91,8 @@
                             </div>
                         </div>
                         <div class="col-5 right">
-                            <div class="slideshow-container" style="width: 80%;float: left;display: flex;justify-content: end;">
+                            <div class="slideshow-container"
+                                style="width: 80%;float: left;display: flex;justify-content: end;">
                                 <div class="mySlides fade">
                                     <img src="IMAGES/soonSlide-1.svg" style="width:100%;height: 100vh;">
                                 </div>
@@ -115,9 +121,10 @@
                                     <span class="dot"></span>
                                     <span class="dot"></span>
                                 </div>
-                               
+
                             </div>
-                            <div class="bg-green " style="width: 20%;float: right;height: 100%;display: flex;justify-content: center;align-items: center;">
+                            <div class="bg-green "
+                                style="width: 20%;float: right;height: 100%;display: flex;justify-content: center;align-items: center;">
                                 <p class="fWeight-800 m-0 rightText">ALL ABOUT VEG</p>
                             </div>
                         </div>
@@ -125,31 +132,73 @@
             </section>
 
             <!-- ############################# popUp #############################-->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog">
+            <div id="extraLargeModal" class="modal fade" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-lg">
                     <div class="modal-content">
-                        <div class="modal-body d-flex p-0">
-                            <div>
-                                <img src="IMAGES/notify.svg">
-                            </div>
-                            <div class="position-relative">
-                                <div class="d-flex flex-column">
-                                    <p class="fWeight-600 fs-20 greenText noto">You’ll be Notified</p>
-                                    <button type="button" class="btn-close position-absolute end-0 top-0"
-                                        data-bs-dismiss="modal" aria-label="Close"></button>
-                                    <p class="fs-20 noto">When the website is live</p>
-                                    <p class="fs-20 noto">Share all about veg with vegetarian food lovers</p>
+                        <div class="modal-body p-0">
+                            <div class="row">
+                                <div class="col-4">
+                                    <img src="IMAGES/notify.svg">
                                 </div>
-                                <button class="btn greenBtn bg-green"> <a href=""
-                                        class="text-decoration-none text-light fWeight-300 noto fs-20 px-2 py-3 noto"><img src="IMAGES/share.svg">
-                                        share</a>
-                                </button>
+                                <div class="col-8">
+                                    <div class="position-relative ps-5 py-3">
+                                        <div class="d-flex flex-column">
+                                            <p class="fWeight-600 fs-40 greenText noto">You’ll be Notified</p>
+                                            <button type="button" class="position-absolute btn end-0 top-0 px-3 py-3"
+                                                data-bs-dismiss="modal" aria-label="Close"><img
+                                                    src="IMAGES/close-circle.svg"></button>
+                                            <p class="fs-25 noto fWeight-300 border-bottom border-success pb-3">When the
+                                                website is
+                                                live</p>
+                                            <p class="fs-20 noto fWeight-300">Share <span class="greenText">all about
+                                                    veg</span> with vegetarian food lovers</p>
+                                        </div>
+                                        <button class="btn greenBtn bg-green" data-bs-toggle="modal"
+                                            data-bs-target="#shareModel"><a href=""
+                                                class="text-decoration-none text-light fWeight-300 noto fs-20 px-2 py-3 noto"
+                                                data-bs-toggle="modal" data-bs-target="#shareModel"><img
+                                                    src="IMAGES/share.svg">
+                                                share</a>
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- ############################# sharePopUp #############################-->
+            <div id="shareModel" class="modal fade" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="position-relative">
+                                <button type="button" class="btn position-absolute end-0 top-0 p-0"
+                                    data-bs-dismiss="modal" aria-label="Close"><img
+                                        src="IMAGES/close-circle.svg"></button>
+                                <p class="greenText fWeight-600 fs-30">Share </p>
+                                <div class="d-flex border-bottom border-dark py-3">
+                                    <a href=""><img src="IMAGES/shareTweeter.svg" class="px-2"></a>
+                                    <a href=""><img src="IMAGES/shareTweeter.svg" class="px-2"></a>
+                                    <a href=""><img src="IMAGES/shareFacebook.svg" class="px-2"></a>
+                                    <a href=""><img src="IMAGES/shareLinkedin.svg" class="px-2"></a>
+                                    <a href=""><img src="IMAGES/shareInsta.svg" class="px-2"></a>
+                                </div>
+                                <div class="d-flex align-items-center py-3">
+                                    <p class="greenText fWeight-600 fs-20 m-0 pe-3">Or Copy Link</p>
+                                    <div class="d-flex bg-box  mailButton py-2 px-2">
+                                        <input type="text" placeholder="allaboutveg.com"
+                                            class="bg-grey border-none fWeight-400 fs-20">
+                                        <button class="btn greenBtn bg-green" type="button"><a href=""
+                                                class="text-decoration-none text-light fWeight-300 noto fs-20 spacing"><img
+                                                    src="IMAGES/copy.svg">Copy</a></button>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
         </main>
         <script>
             let slideIndex = 0;

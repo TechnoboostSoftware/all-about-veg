@@ -17,7 +17,11 @@
 .fs-25 {
     font-size: 25px;
 }
-
+.bg-grey{
+    background: #F5F5F5;
+    color: white;
+    border: none;
+}
 .fira {
     font-family: 'Fira Sans Extra Condensed';
     font-style: normal;
