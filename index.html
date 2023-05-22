@@ -35,7 +35,7 @@
         <main id="landingPage">
             <section>
                 <div class="allContent container-fluid">
-                    <div class="row position-relative">
+                    <div class="row">
                         <div class="col-7 left ">
                             <img src="IMAGES/soonLogo.svg" class="ps-3" style="width: 200px;">
                             <div class="bg-green launching ps-4 d-flex align-items-center mt-3 w-75"
@@ -47,7 +47,7 @@
                             <div class="oneStep ps-3 pt-5">
                                 <p class="fWeight-500 fs-30 noto m-0">Your One Stop Solution For Finding</p>
                                 <div class="Vegetarian">
-                                    <div class="wrapper pb-4">
+                                    <div class="wrapper">
                                         <img src="IMAGES/leaf.svg" width="35px">
                                         <p class="fs-45 fWeight-700 ps-3 m-0">Vegetarian</p>
                                         <div class="words">
@@ -74,23 +74,24 @@
                                                 Me</a></button>
                                     </div>
                                 </div>
-                                <div class="add pt-5">
+                                <div class="add pt-4">
                                     <p class="noto fs-20 fWeight-300 ">Know of any good vegetarian outlet? Help us
                                         list it in our platform
                                     </p>
                                     <button class="btn greenBtn bg-green"><a href=""
-                                            class="text-decoration-none text-light fWeight-300 noto fs-20 px-2 py-3 spacing">Add
+                                            class="text-decoration-none text-light fWeight-300 noto fs-20 px-2 py-3 spacing"
+                                            data-bs-toggle="modal" data-bs-target="#provider">Add
                                             Providers</a>
                                     </button>
                                 </div>
                             </div>
-                            <div class="linkImg position-absolute bottom-0 p-3">
+                            <div class="linkImg -0 p-3">
                                 <a href="" class="pe-2"><img src="IMAGES/facebook.svg"></a>
                                 <a href="" class="pe-2"><img src="IMAGES/tweeter.svg"></a>
                                 <a href="" class="pe-2"><img src="IMAGES/insta.svg"></a>
                             </div>
                         </div>
-                        <div class="col-5 right">
+                        <div class="col-5 right p-0">
                             <div class="slideshow-container"
                                 style="width: 80%;float: left;display: flex;justify-content: end;">
                                 <div class="mySlides fade">
@@ -199,6 +200,108 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+
+            <!-- ############################# provider #############################-->
+            <div id="provider" class="modal fade" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-body p-0">
+                            <div class="row">
+                                <div class="col-3 h-100">
+                                    <img src="IMAGES/bg-Provider.svg">
+                                </div>
+                                <div class="col-9 h-100 ">
+                                    <div class="d-flex flex-column px-5 pt-4 position-relative">
+                                        <button type="button" class="btn position-absolute end-0 top-0 pe-3 pt-3"
+                                            data-bs-dismiss="modal" aria-label="Close"><img
+                                                src="IMAGES/close-circle.svg"></button>
+                                        <p class="fWeight-500 noto fs-30 text-center">Add Providers to our all about veg
+                                        </p>
+                                        <div class="ps-4">
+                                            <p class="fWeight-500 noto fs-20">You’re</p>
+                                            <div class="d-flex align-items-center pb-3">
+                                                <input type="radio" name="provider" value="30" data-bs-toggle="modal" data-bs-target="#customer">
+                                                <label for="age1"
+                                                    class="fWeight-500 noto fs-20 ps-3 pe-4">Customer</label>
+                                                <input type="radio" name="provider" value="30">
+                                                <label for="age1"
+                                                    class="fWeight-500 noto fs-20 ps-3 pe-4" >Provider</label>
+                                            </div>
+                                        </div>
+                                        <select class="form-select p-3 my-2  bg-grey text-grey"
+                                            aria-label="Default select example">
+                                            <option selected>Choose your Provider type</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                        <input type="text" class="p-3 my-2  bg-grey" placeholder="Provider Owner Name">
+                                        <input type="text" class="p-3 my-2  bg-grey" placeholder="Provider Name">
+                                        <textarea cols="30" rows="6" class="p-3 my-2  bg-grey"
+                                            placeholder="Provider description"></textarea>
+                                        <input type="text" class="p-3 my-2  bg-grey" placeholder="Provider Address">
+                                        <input type="text" class="p-3 my-2  bg-grey" placeholder="Email address">
+                                        <input type="text" class="p-3 my-2  bg-grey" placeholder="Phone number">
+                                        <button class="btn btn-success w-100 py-3 fs-20 fWeight-500 noto"><a
+                                                href=""></a><img src="IMAGES/providerSend.svg"
+                                                class="text-decoration-none"> submit </a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ############################# Customer #############################-->
+            <div id="customer" class="modal fade" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-body p-0">
+                            <div class="row">
+                                <div class="col-3 h-100">
+                                    <img src="IMAGES/bg-Provider.svg">
+                                </div>
+                                <div class="col-9 h-100 ">
+                                    <div class="d-flex flex-column px-5 pt-4 position-relative">
+                                        <button type="button" class="btn position-absolute end-0 top-0 pe-3 pt-3"
+                                            data-bs-dismiss="modal" aria-label="Close"><img
+                                                src="IMAGES/close-circle.svg"></button>
+                                        <p class="fWeight-500 noto fs-30 text-center">Add Providers to our all about veg
+                                        </p>
+                                        <div class="ps-4">
+                                            <p class="fWeight-500 noto fs-20">You’re</p>
+                                            <div class="d-flex align-items-center pb-3">
+                                                <input type="radio" name="provider" value="30">
+                                                <label for="age1"
+                                                    class="fWeight-500 noto fs-20 ps-3 pe-4">Customer</label>
+                                                <input type="radio" name="provider" value="30" data-bs-toggle="modal" data-bs-target="#provider">
+                                                <label for="age1"
+                                                    class="fWeight-500 noto fs-20 ps-3 pe-4">Provider</label>
+                                            </div>
+                                        </div>
+                                        <select class="form-select p-3 my-2  bg-grey text-grey"
+                                            aria-label="Default select example">
+                                            <option selected>Choose your Provider type</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                        <input type="text" class="p-3 my-2  bg-grey" placeholder="Provider Name">
+                                        <textarea cols="30" rows="6" class="p-3 my-2  bg-grey"
+                                            placeholder="Provider Address"></textarea>
+                                        <input type="text" class="p-3 my-2  bg-grey" placeholder="Email address">
+                                        <button class="btn btn-success w-100 py-3 fs-20 fWeight-500 noto"><a
+                                                href=""></a><img src="IMAGES/providerSend.svg"
+                                                class="text-decoration-none"> submit </a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
         <script>
             let slideIndex = 0;

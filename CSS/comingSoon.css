@@ -1,7 +1,6 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Noto Sans';
 }
 
 .bg-green {
@@ -81,6 +80,11 @@
     font-weight: 800;
 }
 
+input[type='radio']{
+    width: 20px;
+    height: 20px;
+    accent-color:  #01B762;
+}
 .text-justify {
     text-align: justify;
 }
@@ -106,10 +110,16 @@
     outline: none;
 }
 
-.mailButton input::placeholder {
-    color: rgba(0, 0, 0, 0.5);
-    font-weight: 300;
-    font-size: 22px;
+.mailButton input::placeholder{
+    color: rgba(0, 0, 0, 0.55);
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.text-grey {
+    color: rgba(0, 0, 0, 0.55);
+    font-weight: 500;
+    font-size: 17px;
     text-transform: capitalize;
 }
 
@@ -180,7 +190,7 @@
 
 
 /* Fading animation */
-.fade {
+.slideshow-container .fade {
     animation-name: fade;
     animation-duration: 3s;
 }
