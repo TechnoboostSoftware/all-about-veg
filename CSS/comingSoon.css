@@ -80,14 +80,6 @@
     font-weight: 800;
 }
 
-input[type='radio']{
-    width: 20px;
-    height: 20px;
-    accent-color:  #01B762;
-}
-input[type='radio']:hover{
-    accent-color:  #01B762;
-}
 .text-justify {
     text-align: justify;
 }
@@ -149,6 +141,59 @@ input[type='radio']:hover{
     animation: spin_words 6s infinite;
     color: #01B762;
 }
+input[type="radio"] {
+    /* remove standard background appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* create custom radiobutton appearance */
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+    /* background-color only for content */
+    background-clip: content-box;
+    border: 1px solid #01B762;
+    background-color: white;
+    border-radius: 50%;
+}
+#provider input.Green[type="radio"] {
+    /* remove standard background appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* create custom radiobutton appearance */
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+    /* background-color only for content */
+    background-clip: content-box;
+    border: 1px solid #01B762;
+    background-color: #01B762;
+    border-radius: 50%;
+}
+#customer input.Green[type="radio"] {
+    /* remove standard background appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* create custom radiobutton appearance */
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+    /* background-color only for content */
+    background-clip: content-box;
+    border: 1px solid #01B762;
+    background-color: #01B762;
+    border-radius: 50%;
+}
+  
+  /* appearance for checked radiobutton */
+  input[type="radio"]:checked {
+    background-color: #01B762;
+  }
 
 @keyframes spin_words {
     10% {

@@ -114,7 +114,7 @@
                                     <img src="IMAGES/soonSlide-6.svg" style="width:100%;height: 120vh;">
                                 </div>
                                 <br>
-                                <div style="text-align:center;">
+                                <div style="text-align:center">
                                     <span class="dot"></span>
                                     <span class="dot"></span>
                                     <span class="dot"></span>
@@ -222,12 +222,13 @@
                                         <div class="ps-4">
                                             <p class="fWeight-500 noto fs-20">You’re</p>
                                             <div class="d-flex align-items-center pb-3">
-                                                <input type="radio" name="provider" value="30" data-bs-toggle="modal" data-bs-target="#customer">
+                                                <input type="radio" name="provider" value="30" data-bs-toggle="modal"
+                                                    data-bs-target="#customer">
                                                 <label for="CustomerBtn"
-                                                    class="fWeight-500 noto fs-20 ps-3 pe-4">Customer</label>
-                                                <input type="radio" name="provider" value="30" checked>
+                                                    class="fWeight-500 noto fs-20 ps-2 pe-4">Customer</label>
+                                                <input type="radio" name="provider" value="30" class="Green">
                                                 <label for="providerBtn"
-                                                    class="fWeight-500 noto fs-20 ps-3 pe-4" >Provider</label>
+                                                    class="fWeight-500 noto fs-20 ps-2 pe-4">Provider</label>
                                             </div>
                                         </div>
                                         <select class="form-select p-3 my-2  bg-grey text-grey"
@@ -244,7 +245,7 @@
                                         <input type="text" class="p-3 my-2  bg-grey" placeholder="Provider Address">
                                         <input type="text" class="p-3 my-2  bg-grey" placeholder="Email address">
                                         <input type="text" class="p-3 my-2  bg-grey" placeholder="Phone number">
-                                        <button class="btn btn-success w-100 py-3 fs-20 fWeight-500 noto"><a
+                                        <button class="btn btn-success w-100 py-3 mt-3 fs-20 fWeight-500 noto" data-bs-toggle="modal" data-bs-target="#appreciate"><a
                                                 href=""></a><img src="IMAGES/providerSend.svg"
                                                 class="text-decoration-none"> submit </a></button>
                                     </div>
@@ -273,12 +274,13 @@
                                         <div class="ps-4">
                                             <p class="fWeight-500 noto fs-20">You’re</p>
                                             <div class="d-flex align-items-center pb-3">
-                                                <input type="radio" name="provider" value="30">
+                                                <input type="radio" name="provider" class="Green" value="30" >
                                                 <label for="CustomerBtn"
-                                                    class="fWeight-500 noto fs-20 ps-3 pe-4">Customer</label>
-                                                <input type="radio" name="provider" value="30" data-bs-toggle="modal" data-bs-target="#provider">
+                                                    class="fWeight-500 noto fs-20 ps-2 pe-4">Customer</label>
+                                                <input type="radio" name="provider" value="30" data-bs-toggle="modal"
+                                                    data-bs-target="#provider">
                                                 <label for="providerBtn"
-                                                    class="fWeight-500 noto fs-20 ps-3 pe-4">Provider</label>
+                                                    class="fWeight-500 noto fs-20 ps-2 pe-4">Provider</label>
                                             </div>
                                         </div>
                                         <select class="form-select p-3 my-2  bg-grey text-grey"
@@ -292,9 +294,39 @@
                                         <textarea cols="30" rows="6" class="p-3 my-2  bg-grey"
                                             placeholder="Provider Address"></textarea>
                                         <input type="text" class="p-3 my-2  bg-grey" placeholder="Email address">
-                                        <button class="btn btn-success w-100 py-3 fs-20 fWeight-500 noto"><a
+                                        <button class="btn btn-success w-100 py-3 mt-3 fs-20 fWeight-500 noto" data-bs-toggle="modal" data-bs-target="#appreciate"><a
                                                 href=""></a><img src="IMAGES/providerSend.svg"
                                                 class="text-decoration-none"> submit </a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ############################# appreciate #############################-->
+            <div id="appreciate" class="modal fade" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-body p-0">
+                            <div class="row">
+                                <div class="col-4">
+                                    <img src="IMAGES/appreciate.svg">
+                                </div>
+                                <div class="col-8">
+                                    <div class="position-relative ps-5 py-3">
+                                        <div class="d-flex flex-column">
+                                            <p class="fWeight-600 fs-30 greenText noto m-0">We Appreciate your effort</p>
+                                            <button type="button" class="position-absolute btn end-0 top-0 px-3 py-3"
+                                                data-bs-dismiss="modal" aria-label="Close"><img
+                                                    src="IMAGES/close-circle.svg"></button>
+                                            <p class="fs-25 noto fWeight-300 pb-3">Thank you for the information</p>
+                                            
+                                        </div>
+                                        <button class="btn greenBtn bg-green px-3 py-3"><a href=""
+                                                class="text-decoration-none text-light fWeight-300 noto fs-20  noto">Home</a>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
