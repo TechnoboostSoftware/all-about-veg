@@ -25,6 +25,7 @@
         <link rel="stylesheet" href="https://unpkg.com/aos@2.3.0/dist/aos.css">
         <link rel="Stylesheet" href="square1/square1.min.css" type="text/css" />
         <script src="square1/square1.min.js"></script>
+        <script src="index.js"></script>
         <!-- ######################################IMAGE SLIDER############################################################ -->
         <link rel="stylesheet" type="text/css" href="slick/slick.css" />
         <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
@@ -238,15 +239,26 @@
                                             <option value="2">Two</option>
                                             <option value="3">Three</option>
                                         </select>
-                                        <input type="text" class="p-3 my-2  bg-grey" placeholder="Provider Owner Name">
-                                        <input type="text" class="p-3 my-2  bg-grey" placeholder="Provider Name">
-                                        <textarea cols="30" rows="6" class="p-3 my-2  bg-grey"
+                                        <input type="text" class="p-3 my-2  bg-grey"
+                                            onclick="removeErrorBorder('ownerName')" id="ownerName"
+                                            placeholder="Provider Owner Name">
+                                        <input type="text" class="p-3 my-2  bg-grey"
+                                            onclick="removeErrorBorder('providerName')" id="providerName"
+                                            placeholder="Provider Name">
+                                        <textarea cols="30" rows="6" onclick="removeErrorBorder('description')"
+                                            id="description" class="p-3 my-2  bg-grey"
                                             placeholder="Provider description"></textarea>
-                                        <input type="text" class="p-3 my-2  bg-grey" placeholder="Provider Address">
-                                        <input type="text" class="p-3 my-2  bg-grey" placeholder="Email address">
-                                        <input type="text" class="p-3 my-2  bg-grey" placeholder="Phone number">
-                                        <button class="btn btn-success w-100 py-3 mt-3 fs-20 fWeight-500 noto" data-bs-toggle="modal" data-bs-target="#appreciate"><a
-                                                href=""></a><img src="IMAGES/providerSend.svg"
+                                        <input type="text" class="p-3 my-2  bg-grey"
+                                            onclick="removeErrorBorder('providerAddress')" id="providerAddress"
+                                            placeholder="Provider Address">
+                                        <input type="text" class="p-3 my-2  bg-grey"
+                                            onclick="removeErrorBorder('emailAddress')" id="emailAddress"
+                                            placeholder="Email address">
+                                        <input type="text" class="p-3 my-2  bg-grey"
+                                            onclick="removeErrorBorder('phoneNumber')" id="phoneNumber"
+                                            placeholder="Phone number">
+                                        <button class="btn btn-success w-100 py-3 mt-3 fs-20 fWeight-500 noto"
+                                            onclick="providerSend()"><a href=""></a><img src="IMAGES/providerSend.svg"
                                                 class="text-decoration-none"> submit </a></button>
                                     </div>
                                 </div>
@@ -274,7 +286,7 @@
                                         <div class="ps-4">
                                             <p class="fWeight-500 noto fs-20">You’re</p>
                                             <div class="d-flex align-items-center pb-3">
-                                                <input type="radio" name="provider" class="Green" value="30" >
+                                                <input type="radio" name="provider" class="Green" value="30">
                                                 <label for="CustomerBtn"
                                                     class="fWeight-500 noto fs-20 ps-2 pe-4">Customer</label>
                                                 <input type="radio" name="provider" value="30" data-bs-toggle="modal"
@@ -290,12 +302,14 @@
                                             <option value="2">Two</option>
                                             <option value="3">Three</option>
                                         </select>
-                                        <input type="text" class="p-3 my-2  bg-grey" placeholder="Provider Name">
-                                        <textarea cols="30" rows="6" class="p-3 my-2  bg-grey"
+                                        <input type="text" class="p-3 my-2  bg-grey" onclick="removeErrorBorder('providerName2')" id="providerName2"
+                                            placeholder="Provider Name">
+                                        <textarea cols="30" rows="6" id="description2" onclick="removeErrorBorder('description2')" class="p-3 my-2  bg-grey"
                                             placeholder="Provider Address"></textarea>
-                                        <input type="text" class="p-3 my-2  bg-grey" placeholder="Email address">
-                                        <button class="btn btn-success w-100 py-3 mt-3 fs-20 fWeight-500 noto" data-bs-toggle="modal" data-bs-target="#appreciate"><a
-                                                href=""></a><img src="IMAGES/providerSend.svg"
+                                        <input type="text" class="p-3 my-2  bg-grey" onclick="removeErrorBorder('emailAddress2')" id="emailAddress2"
+                                            placeholder="Email address">
+                                        <button class="btn btn-success w-100 py-3 mt-3 fs-20 fWeight-500 noto"
+                                            onclick="customerSend()"><a href=""></a><img src="IMAGES/providerSend.svg"
                                                 class="text-decoration-none"> submit </a></button>
                                     </div>
                                 </div>
@@ -317,12 +331,13 @@
                                 <div class="col-8">
                                     <div class="position-relative ps-5 py-3">
                                         <div class="d-flex flex-column">
-                                            <p class="fWeight-600 fs-30 greenText noto m-0">We Appreciate your effort</p>
+                                            <p class="fWeight-600 fs-30 greenText noto m-0">We Appreciate your effort
+                                            </p>
                                             <button type="button" class="position-absolute btn end-0 top-0 px-3 py-3"
                                                 data-bs-dismiss="modal" aria-label="Close"><img
                                                     src="IMAGES/close-circle.svg"></button>
                                             <p class="fs-25 noto fWeight-300 pb-3">Thank you for the information</p>
-                                            
+
                                         </div>
                                         <button class="btn greenBtn bg-green px-3 py-3"><a href=""
                                                 class="text-decoration-none text-light fWeight-300 noto fs-20  noto">Home</a>
@@ -355,6 +370,7 @@
                 dots[slideIndex - 1].className += " active";
                 setTimeout(showSlides, 2000); // Change image every 2 seconds
             }
+
         </script>
     </body>
 
